@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_screen"
+    tools:context=".MainActivity">
+
+    <com.bitvale.switcher.SwitcherX
+        android:id="@+id/ap_connected_check_switch"
+        android:layout_width="88dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="92dp"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@+id/bluetooth_check_switch"
+        app:layout_constraintEnd_toStartOf="@+id/bluetooth_check_switch"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bluetooth_check_switch"
+        app:layout_constraintVertical_bias="0.0"
+        app:switcher_icon_color="@color/switcher_icon_color"
+        app:switcher_off_color="#686666"
+        app:switcher_on_color="#A51A1A" />
+
+    <com.bitvale.switcher.SwitcherX
+        android:id="@+id/bluetooth_check_switch"
+        android:layout_width="88dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="80dp"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:switcher_icon_color="@color/switcher_icon_color"
+        app:switcher_off_color="#686666"
+        app:switcher_on_color="#A51A1A" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Bluetooth connection"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ap_connected_check_switch"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/ap_connected_check_switch"
+        app:layout_constraintTop_toBottomOf="@+id/ap_connected_check_switch"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="LAN connection"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/bluetooth_check_switch"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="@+id/bluetooth_check_switch"
+        app:layout_constraintTop_toBottomOf="@+id/bluetooth_check_switch"
+        app:layout_constraintVertical_bias="0.953" />
+
+    <com.manojbhadane.QButton
+        android:id="@+id/enter_control_panel_btn"
+        android:layout_width="168dp"
+        android:layout_height="42dp"
+        android:layout_margin="10dp"
+        android:text="Enter the panel"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:qb_backgroundColor="#A61A1A"
+        app:qb_radius="400"
+        app:qb_strokeColor="#978B8B"
+        app:qb_strokeWidth="70" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

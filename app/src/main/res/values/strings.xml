@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fire fighting robot app</string>
+    <string name="enter_control_panel_button">Control panel</string>
+
+</resources>
