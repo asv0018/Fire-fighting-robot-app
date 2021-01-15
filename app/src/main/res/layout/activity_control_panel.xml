@@ -9,6 +9,7 @@
     tools:context=".ControlPanel">
 
     <com.jackandphantom.joystickview.JoyStickView
+        app:lockCenter="true"
         android:id="@+id/joyStickView"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -85,19 +86,20 @@
                 android:id="@+id/humidity_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="40dp"
-                android:text="100%"
+                android:layout_marginEnd="56dp"
+                android:text="10.0 %"
+                android:textSize="10dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView"
                 app:layout_constraintEnd_toStartOf="@+id/imageView2"
                 app:layout_constraintTop_toTopOf="@+id/imageView"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="0.8" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginEnd="9dp"
+                android:layout_marginEnd="12dp"
                 app:layout_constraintBottom_toTopOf="@+id/imageView4"
                 app:layout_constraintEnd_toStartOf="@+id/temperature_text_view"
                 app:layout_constraintTop_toTopOf="parent"
@@ -108,8 +110,9 @@
                 android:id="@+id/temperature_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="28dp"
-                android:text="100 C"
+                android:layout_marginEnd="20dp"
+                android:text="19.0 C"
+                android:textSize="10dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageView2"
@@ -123,24 +126,25 @@
                 android:layout_marginBottom="32dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/fire_extenguisher" />
+                app:srcCompat="@drawable/fire" />
 
             <TextView
                 android:id="@+id/fire_extenguisher_status_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="52dp"
-                android:text="OFF"
+                android:layout_marginEnd="68dp"
+                android:text="NO"
+                android:textSize="10dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView3"
                 app:layout_constraintEnd_toStartOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="@+id/imageView3"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.1" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_marginEnd="11dp"
+                android:layout_marginEnd="12dp"
                 android:layout_marginBottom="36dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/near_obstacle_distance_view"
@@ -152,10 +156,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:text="100 cm"
+                android:textSize="10dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView4"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -229,7 +233,7 @@
         android:layout_width="88dp"
         android:layout_height="34dp"
         android:layout_marginStart="128dp"
-        android:checked="false"
+        android:checked="true"
         android:rotation="270"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
